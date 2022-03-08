@@ -25,10 +25,14 @@ const scrapeData = async () => {
 
     for (let i = 0; i <= 49; i++) {
         let appsLink = parsedData("a.JC71ub")[i].attribs.href;
-        apps.push(`${appsLink}\n`);
+        if (i === 0) {
+            apps.push(`,${appsLink}\n`);
+        } else if (i === 49) {
+            apps.push(`${appsLink}\n,`);
+        } else {
+            apps.push(`${appsLink}\n`);
+        }
     }
-
-// TODO: read file and delete duplicated data
 
     try {
         // if file exist write new data else create file
@@ -38,6 +42,7 @@ const scrapeData = async () => {
                     console.error(err)
                     return
                 }
+                removeDuplicates()
             })
         } else {
             fs.writeFileSync(filePath, apps.toString())
@@ -47,5 +52,22 @@ const scrapeData = async () => {
     }
 };
 
-// invoking the main function
+const removeDuplicates = async () => {
+    let links = []
+    let setedLinks = null
+
+    try {
+        const data = fs.readFileSync(filePath, 'utf8')
+        links = data.split(",")
+        setedLinks = [...new Set(links)]
+
+        fs.writeFileSync("links copy.txt", setedLinks.toString())
+
+        console.log(`links encontrados: ${links.length}`)
+        console.log(`setedLinks encontrados: ${setedLinks.length}`)
+    } catch (err) {
+        console.error(err)
+    }
+}
+
 scrapeData();
