@@ -2,6 +2,11 @@ import fetch from "node-fetch";
 import fs from "fs";
 import cheerio from "cheerio";
 
+const filePath = "links.txt";
+
+// URL for data
+const URL = "https://play.google.com/store/apps/collection/cluster?clp=ogoKCA0qAggBUgIIAQ%3D%3D:S:ANO1ljJJQho&gsr=Cg2iCgoIDSoCCAFSAggB:S:ANO1ljJDbNY&hl=es";
+
 // function to get the raw data
 const getRawData = (URL) => {
     return fetch(URL)
@@ -10,11 +15,6 @@ const getRawData = (URL) => {
             return data;
         });
 };
-
-// URL for data
-const URL = "https://play.google.com/store/apps/collection/cluster?clp=ogoKCA0qAggBUgIIAQ%3D%3D:S:ANO1ljJJQho&gsr=Cg2iCgoIDSoCCAFSAggB:S:ANO1ljJDbNY&hl=es";
-
-const filePath = "links.txt";
 
 // start of the program
 const scrapeData = async () => {
@@ -68,6 +68,8 @@ const removeDuplicates = () => {
         console.error(err)
     }
 }
+
+// TODO: create function for obtain app info
 
 scrapeData();
 // removeDuplicates();
