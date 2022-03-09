@@ -42,7 +42,6 @@ const scrapeData = async () => {
                     console.error(err)
                     return
                 }
-                removeDuplicates()
             })
         } else {
             fs.writeFileSync(filePath, apps.toString())
@@ -52,7 +51,7 @@ const scrapeData = async () => {
     }
 };
 
-const removeDuplicates = async () => {
+const removeDuplicates = () => {
     let links = []
     let setedLinks = null
 
@@ -61,7 +60,7 @@ const removeDuplicates = async () => {
         links = data.split(",")
         setedLinks = [...new Set(links)]
 
-        fs.writeFileSync("links copy.txt", setedLinks.toString())
+        fs.writeFileSync("links.txt", setedLinks.toString())
 
         console.log(`links encontrados: ${links.length}`)
         console.log(`setedLinks encontrados: ${setedLinks.length}`)
@@ -71,3 +70,4 @@ const removeDuplicates = async () => {
 }
 
 scrapeData();
+// removeDuplicates();
