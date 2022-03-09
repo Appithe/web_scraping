@@ -73,3 +73,9 @@
 ,/store/apps/details?id=menion.android.locus.pro
 ,/store/apps/details?id=org.twisevictory.apps
 ,/store/apps/details?id=com.filmic.filmicpro
+,/store/apps/details?id=com.gomtv.gomaudio.pro
+,/store/apps/details?id=com.lvlup.buddhify
+,/store/apps/details?id=com.sagosago.Robots.googleplay
+,/store/apps/details?id=mymacros.com.mymacros
+,/store/apps/details?id=com.pavelrekun.tilla.premium
+,/store/apps/details?id=com.tocaboca.tocahairsalon3
