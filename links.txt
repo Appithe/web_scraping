@@ -79,3 +79,6 @@
 ,/store/apps/details?id=mymacros.com.mymacros
 ,/store/apps/details?id=com.pavelrekun.tilla.premium
 ,/store/apps/details?id=com.tocaboca.tocahairsalon3
+,/store/apps/details?id=pro.cryptotab.android
+,/store/apps/details?id=com.tocaboca.tocatown
+,/store/apps/details?id=com.vicman.photolabpro
