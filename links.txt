@@ -1,4 +1,4 @@
-,/store/apps/details?id=net.osmand.plus
+/store/apps/details?id=net.osmand.plus
 ,/store/apps/details?id=com.vitotechnology.StarWalk2
 ,/store/apps/details?id=fitness.workouts.home.workoutspro
 ,/store/apps/details?id=com.flyersoft.moonreaderp
@@ -107,3 +107,4 @@
 ,/store/apps/details?id=com.tmsoft.whitenoise.full
 ,/store/apps/details?id=yo.app
 ,/store/apps/details?id=com.tocaboca.tocapetdoctor
+,/store/apps/details?id=com.foxandsheep.nightynight3
