@@ -105,3 +105,5 @@
 ,/store/apps/details?id=com.chanel.weather.forecast.accu.pro
 ,/store/apps/details?id=com.simplemobiletools.draw.pro
 ,/store/apps/details?id=com.tmsoft.whitenoise.full
+,/store/apps/details?id=yo.app
+,/store/apps/details?id=com.tocaboca.tocapetdoctor
