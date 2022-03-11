@@ -5,7 +5,7 @@ import cheerio from "cheerio";
 const filePath = "links.txt";
 
 // URL for data
-const URL = "https://play.google.com/store/apps/collection/cluster?clp=ogoKCA0qAggBUgIIAQ%3D%3D:S:ANO1ljJJQho&gsr=Cg2iCgoIDSoCCAFSAggB:S:ANO1ljJDbNY&hl=es";
+const URL_GOOGLEPLAY = "https://play.google.com/store/apps/collection/cluster?clp=ogoKCA0qAggBUgIIAQ%3D%3D:S:ANO1ljJJQho&gsr=Cg2iCgoIDSoCCAFSAggB:S:ANO1ljJDbNY&hl=es";
 
 // function to get the raw data
 const getRawData = (URL) => {
@@ -18,7 +18,7 @@ const getRawData = (URL) => {
 
 // start of the program
 const scrapeData = async () => {
-    const rawData = await getRawData(URL);
+    const rawData = await getRawData(URL_GOOGLEPLAY);
     // parsing the data
     const parsedData = cheerio.load(rawData);
     let apps = [];
@@ -69,7 +69,25 @@ const removeDuplicates = () => {
     }
 }
 
-// TODO: create function for obtain app info
+const URL_INICIO = "https://play.google.com"
 
-scrapeData();
+const GetAppInfo = async () => {
+    let links = []
+
+    const data = fs.readFileSync(filePath, 'utf8');
+    links = data.split(",");
+
+    let appUrl = URL_INICIO.concat(links[0]);
+
+    const appData = await getRawData(appUrl);
+    const parsedAppData = cheerio.load(appData);
+
+    const developer = parsedAppData("a.hrTbp")
+    console.log(developer)
+
+}
+
+
+// scrapeData();
 // removeDuplicates();
+GetAppInfo();
