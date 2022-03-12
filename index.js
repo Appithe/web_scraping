@@ -23,11 +23,11 @@ const scrapeData = async () => {
     const parsedData = cheerio.load(rawData);
     let apps = [];
 
-    for (let i = 0; i <= 49; i++) {
+    for (let i = 0; i <= 35; i++) {
         let appsLink = parsedData("a.JC71ub")[i].attribs.href;
         if (i === 0) {
             apps.push(`,${appsLink}\n`);
-        } else if (i === 49) {
+        } else if (i === 35) {
             apps.push(`${appsLink}\n,`);
         } else {
             apps.push(`${appsLink}\n`);
@@ -82,7 +82,7 @@ const GetAppInfo = async () => {
     const appData = await getRawData(appUrl);
     const parsedAppData = cheerio.load(appData);
 
-    const developer = parsedAppData("a.hrTbp")
+    const developer = parsedAppData("button.LkLjZd ScJHi HPiPcc IfEcue")
     console.log(developer)
 
 }
@@ -90,4 +90,3 @@ const GetAppInfo = async () => {
 
 // scrapeData();
 // removeDuplicates();
-GetAppInfo();

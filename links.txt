@@ -108,3 +108,8 @@
 ,/store/apps/details?id=yo.app
 ,/store/apps/details?id=com.tocaboca.tocapetdoctor
 ,/store/apps/details?id=com.foxandsheep.nightynight3
+,/store/apps/details?id=com.noisli.noisli
+,/store/apps/details?id=com.hexoline.fwfgold
+,/store/apps/details?id=cc.fuze.forks
+,/store/apps/details?id=com.theordinaryguide.app
+,/store/apps/details?id=com.ndemiccreations.scenariocreator
