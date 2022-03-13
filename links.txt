@@ -115,7 +115,9 @@
 ,/store/apps/details?id=com.ndemiccreations.scenariocreator
 ,/store/apps/details?id=com.photopills.android.photopills
 ,/store/apps/details?id=com.extreamsd.aemobile
-,,/store/apps/details?id=com.imageline.FLM
+,/store/apps/details?id=com.imageline.FLM
 ,/store/apps/details?id=com.intermedia.hd.camera.pro
 ,/store/apps/details?id=com.droid27.transparentclockweather.premium
 ,/store/apps/details?id=com.studiopango.pangocolor
+,/store/apps/details?id=au.com.metro.dwjr.boffos
+,
