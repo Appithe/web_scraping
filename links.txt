@@ -120,4 +120,6 @@
 ,/store/apps/details?id=com.droid27.transparentclockweather.premium
 ,/store/apps/details?id=com.studiopango.pangocolor
 ,/store/apps/details?id=au.com.metro.dwjr.boffos
-,
+,/store/apps/details?id=tech.memorize.chinese
+,/store/apps/details?id=com.amaan.wallfever
+,/store/apps/details?id=com.digibites.calendarplus
